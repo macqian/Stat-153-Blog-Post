@@ -45,6 +45,7 @@ Looking at the chart above, we see Lebron has an **average E2W score of around 1
 To remove these two issues, we first used a technique called _differencing_ with respect to lag 1, which measures the change in Lebron’s E2W from one game to the next. We then created a time series plot and a ACF plot (which measures the correlation from game x and game x + i) using this new dataset to determine its fit. 
 
 ![](LBJ_diff_TS)
+
 ![](LBJ_diff_ACF.png)
 
 Looking at the new time series plot, the sinusoidal problem seems to be gone as there is a constant mean around 0. However, the spikes are still there, so we need to apply another statistical adjustment in order to account for them. We see in the ACF plot that there are two large spikes that fall outside the blue confidence intervals, one at lag 0 and one at lag 1. The lag 0 spike will always be there as a data point at time t will always have a correlation of 1 with itself. The spike at lag 1 tells us that the data set can most likely be fitted by a **moving average (MA) model**, specifically an **MA(1) model** as there is the large spike at lag 1. Using this final model, we arrive at our forecasts.
