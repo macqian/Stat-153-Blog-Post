@@ -46,7 +46,6 @@ To remove these two issues, we first used a technique called _differencing_ with
 
 ![](LBJ_diff_TS)
 
-asdfasdf
 
 ![](LBJ_diff_ACF.png)
 
