@@ -44,7 +44,7 @@ Looking at the chart above, we see Lebron has an **average E2W score of around 1
 
 To remove these two issues, we first used a technique called _differencing_ with respect to lag 1, which measures the change in Lebron’s E2W from one game to the next. We then created a time series plot and a ACF plot (which measures the correlation from game x and game x + i) using this new dataset to determine its fit. 
 
-![Lebron James' E2W TS Plot with Differencing](LBJ_diff_TS)
+![Lebron James' E2W TS Plot with Differencing](LBJ_diff_TS.png)
 
 ![Lebron James' E2W ACF Plot with Differencing](LBJ_diff_ACF.png)
 
